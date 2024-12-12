@@ -9,6 +9,10 @@ jobs:
   assign-issue:
     runs-on: ubuntu-latest
     steps:
+    # Step 1: Check out the repository
+      - name: Check out repository
+        uses: actions/checkout@v3
+        
       - name: Assign Issue
         uses: actions-ecosystem/action-assign@v2
         with:
